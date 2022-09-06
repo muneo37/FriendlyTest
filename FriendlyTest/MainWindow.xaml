@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Button Content="上げ潮じゃー！" Width="100" Height="20" Click="Button_Click"/>
     </Grid>
 </Window>
