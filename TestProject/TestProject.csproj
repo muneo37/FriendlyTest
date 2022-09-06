@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-
+	<UseWindowsForms>true</UseWindowsForms>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
@@ -27,6 +27,18 @@
     </Reference>
     <Reference Include="Codeer.Friendly.Windows.Grasp">
       <HintPath>packages\Codeer.Friendly.Windows.Grasp.2.5.1\lib\net20\Codeer.Friendly.Windows.Grasp.dll</HintPath>
+    </Reference>
+    <Reference Include="Codeer.Friendly.Windows.NativeStandardControls">
+      <HintPath>packages\Codeer.Friendly.Windows.NativeStandardControls.2.2.3\lib\net20\Codeer.Friendly.Windows.NativeStandardControls.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.WPF">
+      <HintPath>packages\FontAwesome.WPF.4.5.0.8\lib\net40\FontAwesome.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="RM.Friendly.WPFStandardControls.3.0">
+      <HintPath>packages\RM.Friendly.WPFStandardControls.1.8.0\lib\net40\RM.Friendly.WPFStandardControls.3.0.dll</HintPath>
+    </Reference>
+    <Reference Include="RM.Friendly.WPFStandardControls.3.5">
+      <HintPath>packages\RM.Friendly.WPFStandardControls.1.8.0\lib\net40\RM.Friendly.WPFStandardControls.3.5.dll</HintPath>
     </Reference>
     <Reference Include="RM.Friendly.WPFStandardControls.4.0">
       <HintPath>packages\RM.Friendly.WPFStandardControls.1.8.0\lib\net40\RM.Friendly.WPFStandardControls.4.0.dll</HintPath>
