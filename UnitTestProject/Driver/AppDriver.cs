@@ -22,7 +22,7 @@ namespace UnitTestProject.Driver
             {
                 return;
             }
-            var dir = Path.GetFullPath("../../../FriendlyTest/bin/Release/net6.0-windows");
+            var dir = Path.GetFullPath("../../../../FriendlyTest/bin/x64/Debug/net6.0-windows");
             var pathExe = dir + "/FriendlyTest.exe";
             var info = new ProcessStartInfo(pathExe) { WorkingDirectory = dir };
             Process = Process.Start(pathExe);

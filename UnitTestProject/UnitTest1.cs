@@ -18,9 +18,18 @@ namespace UnitTestProject
             _app = new AppDriver();
         }
 
+        [TestCleanup]
+        public void TestCleanup()
+        {
+            _app.Dispose();
+        }
+
         [TestMethod]
         public void TestMethod1()
         {
+            var entry = _app.Main;
+
+            entry.button_click();
         }
     }
 }
