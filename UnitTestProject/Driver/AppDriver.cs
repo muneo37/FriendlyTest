@@ -22,8 +22,8 @@ namespace UnitTestProject.Driver
             {
                 return;
             }
-            var dir = Path.GetFullPath("../../../WpfApplication/bin/Release");
-            var pathExe = dir + "/WpfApplication.exe";
+            var dir = Path.GetFullPath("../../../FriendlyTest/bin/Release/net6.0-windows");
+            var pathExe = dir + "/FriendlyTest.exe";
             var info = new ProcessStartInfo(pathExe) { WorkingDirectory = dir };
             Process = Process.Start(pathExe);
             _app = new WindowsAppFriend(Process);
