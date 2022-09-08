@@ -53,10 +53,9 @@ namespace UnitTestProject
 
             window.Title = "タイトル変更";
 
-            var btn = window.LogicalTree().ByType<Button>().ByBinding("button1").Single();
+            var btn = new WPFButtonBase(window.button1);
 
-            WPFButtonBase wpfButtonBase = new WPFButtonBase(btn);
-            wpfButtonBase.EmulateClick();
+            btn.EmulateClick();
 
             // フィールドからユーザーコントロールを取得(Friendlyの基本機能)
             //AppVar userControl = window.Dynamic()._userControl;
