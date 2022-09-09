@@ -27,7 +27,7 @@ namespace FriendlyTest
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("シブヤ魂");
+            MessageBox.Show("シブヤ魂", "Title");
         }
     }
 }

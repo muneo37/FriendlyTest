@@ -12,6 +12,8 @@ using System.Windows;
 using Codeer.Friendly.Dynamic;
 using System.Windows.Controls;
 using Codeer.Friendly.Windows;
+using Codeer.Friendly.Windows.Grasp;
+using UnitTestProject.Driver.Window;
 
 namespace UnitTestProject
 {
@@ -55,7 +57,16 @@ namespace UnitTestProject
 
             var btn = new WPFButtonBase(window.button1);
 
-            btn.EmulateClick();
+            var async = new Async();
+            btn.EmulateClick(async);
+            var msg = WindowControl.WaitForIdentifyFromWindowText(btn.App, "Title", async);
+
+            if(msg != null)
+            {
+                var mbd = new MessageBoxDriver(msg);
+                mbd.Button_OK_Click();
+            }
+            
 
             // フィールドからユーザーコントロールを取得(Friendlyの基本機能)
             //AppVar userControl = window.Dynamic()._userControl;
